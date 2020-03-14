@@ -8,6 +8,7 @@ import { Message } from '@corona/api-interfaces';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  hello$ = this.http.get<Message>('/api/hello');
+  urlBase = 'https://api.covid19api.com/';
   constructor(private http: HttpClient) {}
+
 }
